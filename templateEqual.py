@@ -1,8 +1,7 @@
 #Steps for use:
 #(1)Export Benchling file as FASTA and put it in folder containing this code.
-#(2)Rename FASTA file as original file name with '.txt' ending.
-#(3)Find reference plasmid on Addgene and Export it into the same folder as FASTA file.
-#(4)Assign 'plasmidName' in templateEqual.py to the name of the plasmid used on Benchling. 
+#(2)Find reference plasmid on Addgene and Export it into the same folder as FASTA file.
+#(4)Assign 'plasmidName' in templateEqual.py to a string of the plasmid name used on Benchling.
 #(5)Replace file names accordingly as 'addgenePlasmid' and 'benchlingPlasmid' in templateEqual.py.
 #(6)Run code!
 plasmidName = "pPSU1"
