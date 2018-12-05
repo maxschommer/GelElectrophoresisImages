@@ -6,14 +6,14 @@
 #(5)Replace file names accordingly as 'addgenePlasmid' and 'benchlingPlasmid' in templateEqual.py.
 #(6)Run code!
 plasmidName = "pPSU1"
-with open('pPSU1Plasmid.fa', 'r') as addgenePlasmid:
+with open('addgenereferenceppsu1.fa', 'r') as addgenePlasmid:
     data1 = addgenePlasmid.read().splitlines(True)
 addgeneOutput = ''
 for lineNumber in range(1, len(data1)):
     data1[lineNumber].replace('\n', '')
     for base in data1[lineNumber]:
         addgeneOutput += base
-with open('ppsu1.fasta', 'r') as benchlingPlasmid:
+with open('benchlingppsu1.fasta', 'r') as benchlingPlasmid:
     data2=benchlingPlasmid.read().replace('>' + plasmidName, '')
 addgeneOutput = addgeneOutput.upper()
 consensusSeq = ''
